@@ -14,9 +14,8 @@ const differences = parsedData.map((val, i, arr) => {return arr.length > i+3 ? a
 // Initialise
 let counter = 0
 
-differences.forEach((n) => {n<0?counter++:null})
-
 // Count how many calculated differences are negative (i.e. the second number is larger than the first)
+differences.forEach((n) => {n<0?counter++:null})
 
 // Return
 console.log(counter)
